@@ -1,22 +1,24 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+## BlogDroid Laravel 
+a Laravel project for social media web app for signing un and shared photos, liking and commenting on them.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Usage
+- **Sign up** with **email** and **password**, then fill user information (profile photo, first name, last name) after that the app will automaticly **Sign in**.
+- Change between **Home**, **Search** and **Profile** using the **bottom navigation bar**.
+- Create post by pressing on the **plus button** (bottom right).
+- Press the 3 dots on top right of the post for more options (edit, delete).
+- **Like** posts by pressing the **heart icon**.
+- **View** post **comments** or **write** one by pressing the **comment icon**.
 
-## About Laravel
+## Features
+- nice simplistic design with android latests UX, UI.
+- Sign up [email, password], checks if email already exists.
+- Sign in, checks if email exists and password is correct.
+- home, search and profile pages.
+- edit profile.
+- create, edit, delete post(description + photo)
+- add, delete comment
+- sign out.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## versions
+   ### - 1.0.0
+   - initial. 
