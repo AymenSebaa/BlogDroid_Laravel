@@ -72,7 +72,7 @@ class PostController extends Controller
         } else if($search != ''){
             $posts = Post::leftJoin('users', 'posts.user_id', '=', 'users.id')->where('desc', 'like', "%$search%")
             ->orWhere('firstname', 'like', "%$search%")->orWhere('lastname', 'like', "%$search%")
-            ->select('posts.id', 'posts.user_id', 'posts.desc','posts.photo', 'posts.created_at')
+            ->select('posts.id', 'posts.user_id', 'posts.desc','posts.photo', 'posts.created_at', )
             ->orderBy('posts.id', 'desc')->get();
         } else {
             $posts = Post::orderBy('id', 'desc')->get();
@@ -95,5 +95,15 @@ class PostController extends Controller
             'posts' => $posts
         ]);
     }
-    
+
+    public function myPosts(){
+        $user = JWTAuth::user();
+        $posts = Post::where("user_id", $user->id)->orderBy("id", "desc")->get();
+        return response()->json([
+            'success' => true,
+            'user' => $user,
+            'posts' => $posts
+        ]);
+    }
+
 }
